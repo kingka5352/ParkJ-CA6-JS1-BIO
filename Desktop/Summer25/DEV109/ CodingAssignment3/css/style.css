@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../images/pancake-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #111;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "left right";
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* 배경이 더 잘 보이도록 50% 불투명 */
+  backdrop-filter: blur(5px);
+  /* 흐림 효과로 텍스트 가독성 유지 */
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  /* 테두리를 부드럽게 */
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  color: #b45f06;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
+
+.footer-note {
+  text-align: right;
+  margin: 20px;
+  font-size: 0.8em;
+  color: #333;
+}

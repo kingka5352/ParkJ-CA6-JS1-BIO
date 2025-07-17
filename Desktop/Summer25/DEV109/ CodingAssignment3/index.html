@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jeongman Park">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect Pancakes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="grid-container">
+
+    <!-- Title/Header -->
+    <header class="header">
+      <h1>Perfect Pancakes</h1>
+      <h2>Fluffy Buttermilk Pancakes</h2>
+      <p>Source: <a href="https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/"
+          target="_blank">AllRecipes</a></p>
+    </header>
+
+    <!-- Left Column: Image + Ingredients -->
+    <section class="left">
+      <figure>
+        <img src="images/pancakes.jpg" alt="Fluffy pancakes">
+        <figcaption>Golden brown buttermilk pancakes ready to serve.</figcaption>
+      </figure>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 1/2 cups all-purpose flour</li>
+        <li>3 1/2 teaspoons baking powder</li>
+        <li>1 teaspoon salt</li>
+        <li>1 tablespoon white sugar</li>
+        <li>1 1/4 cups milk</li>
+        <li>1 egg</li>
+        <li>3 tablespoons butter, melted</li>
+      </ul>
+    </section>
+
+    <!-- Right Column: Forms + Directions -->
+    <section class="right">
+      <!-- Commented Out Equipment Section -->
+      <!--
+      <h3>Equipment</h3>
+      <ul>
+        <li>Mixing bowl</li>
+        <li>Whisk</li>
+        <li>Frying pan or griddle</li>
+        <li>Spatula</li>
+        <li>Measuring cups</li>
+      </ul>
+      -->
+
+      <!-- Rate This Recipe Section -->
+      <h3 class="rate">Rate This Recipe</h3>
+      <fieldset style="width: 250px;">
+        <legend>How difficult is this recipe?</legend>
+        <input type="radio" id="easy" name="difficulty" value="easy"> Easy
+        <input type="radio" id="intermediate" name="difficulty" value="intermediate"> Intermediate
+        <input type="radio" id="hard" name="difficulty" value="hard"> Hard
+      </fieldset>
+
+      <p>&nbsp;</p>
+
+      <!-- Conversion Section -->
+      <h3>Conversion</h3>
+      <input type="text" id="tblspn" name="tblspn" placeholder="Tablespoons">
+      =
+      <input type="text" id="cups" name="cups" placeholder="Cups">
+
+      <!-- Directions Section -->
+      <h3>Directions</h3>
+      <ol>
+        <li>In a large bowl, sift together flour, baking powder, salt, and sugar.</li>
+        <li>Make a well in the center and pour in milk, egg, and melted butter. Mix until smooth.</li>
+        <li>Heat a lightly oiled griddle or frying pan over medium-high heat.</li>
+        <li>Pour or scoop the batter onto the griddle using about 1/4 cup per pancake.</li>
+        <li>Brown on both sides and serve hot.</li>
+      </ol>
+    </section>
+  </div>
+
+  <footer>
+    <p class="footer-note">This page created as academic activity only.</p>
+  </footer>
+
+</body>
+
+</html>
