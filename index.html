@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jeongman Park">
+  <title>Bear Ninja Hunter</title>
+</head>
+
+<body>
+  <h1>Bear Ninja Hunter Game</h1>
+  <p id="result">Results will show up here.</p>
+
+  <script>
+    //Welcome the player to the game using a prompt to collect their name:
+    let playerName = prompt("Welcome to Bear Ninja Hunter! Please enter your name to get started");
+    //Alert to greet the player with a personalized message.
+    alert(`Hello, ${playerName}! Let's play Bear Ninja Hunter!`);
+    //Prompt the player's choice.
+    let playerChoice = prompt("Who are you: Bear, Ninja, or Hunter.");
+    let computerChoice = "Bear";
+    //Print the personalized game results to the html page and the console.
+        let gameMessage = `${playerName}, You picked ${playerChoice}.<br> The computer picked ${computerChoice}.`;
+    document.getElementById("result").innerHTML = gameMessage;
+    console.log(gameMessage);
+  </script>
+</body>
+
+</html>
