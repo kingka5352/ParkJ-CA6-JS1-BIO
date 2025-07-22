@@ -10,6 +10,13 @@
   <p id="result">Results will show up here.</p>
 
   <script>
+    let playerName = prompt("Welcome to Bear Ninja Hunter! What's your name?");
+    alert(`Hello, ${playerName}! Get ready to play Bear Ninja Hunter!`);
+    let playerChoice = prompt("Choose your character: Bear, Ninja, or Hunter.");
+    let computerChoice = "Bear";
+    let gameMessage = `${playerName}, you chose ${playerChoice}. The computer chose ${computerChoice}.`;
+    document.getElementById("result").innerHTML = gameMessage;
+    console.log(gameMessage);
   </script>
 </body>
 </html>
